@@ -1,4 +1,7 @@
 /********** Template CSS **********/
+body{
+    margin: 0 auto;
+}
 :root {
     --primary: #6244C5;
     --secondary: #FFC448;
