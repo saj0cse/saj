@@ -1,6 +1,14 @@
 /********** Template CSS **********/
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap');
+.playwrite-dk-loopet{
+    font-family: "Playwrite DK Loopet", cursive;
+    font-weight: 400;
+  }
+
+
 body{
     margin: 0 auto;
+    padding: 0;
 }
 :root {
     --primary: #6244C5;
