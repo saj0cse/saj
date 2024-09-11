@@ -16,15 +16,16 @@
 
   // // Navbar on scrolling
   // $(window).scroll(function () {
-  //     if ($(this).scrollTop() > -1) {
+  //     if ($(this).scrollTop() > 300) {
   //         $('.navbar').fadeIn('slow').css('display', 'flex');
   //     } else {
   //         $('.navbar').fadeOut('slow').css('display', 'none');
   //     }
   // });
+
+  // new add 
   // Remove the scroll event listener
   $(window).off("scroll");
-
   // Set navbar display to flex
   $(".navbar").css("display", "flex");
 
