@@ -54,6 +54,13 @@ p {
   color: #5b5b5b;
 }
 
+li {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #5b5b5b;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   letter-spacing: -1px;
@@ -79,6 +86,36 @@ h3,
 b, strong {
   font-weight: bold;
 }
+
+/* unique h2 start  */
+    .unique-header {
+        font-family: 'Arial', sans-serif;
+        font-size: 2rem;
+        color: #007bff;
+        /* text-align: center; */
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        position: relative;
+        padding-bottom: 10px;
+    }
+    
+    .unique-header::after {
+        /* content: ''; */
+        position: absolute;
+        bottom: 0;
+        /* left: 50%; */
+        transform: translateX(-80%);
+        width: 60%;
+        height: 3px;
+        background-color: #007bff;
+    }
+
+    .unique-header:hover {
+        color: #2e6cad;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+/* unique h2 end  */
 
 .custom-btn {
   background: #eee;
@@ -138,12 +175,6 @@ b, strong {
   animation-delay: 4s;
 }
 
-/* .footer{
-  background-color: #eee;
-} */
-
-
-
 /*** Project Portfolio ***/
 #portfolio-flters li {
   display: inline-block;
@@ -199,10 +230,6 @@ b, strong {
 }
 
 
-
-/* footer .list-inline-item a i {
-  font-size: 24px; 
-} */
 
 @keyframes BottomTotop {
   0% {
@@ -530,6 +557,88 @@ b, strong {
 .social-links .uil:hover {
   color: #0d6efd;
 }
+
+/* custom footer code  start*/
+.footer {
+  background-color: #474559;
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Footer Text and Links */
+.footer h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  padding-left: 0;
+}
+
+.footer .list-inline-item {
+  display: inline-block;
+}
+
+.footer .list-inline-item a {
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effects for Links */
+.link-hover:hover {
+  color: #f0f0f0;
+  text-decoration: underline;
+}
+
+/* Hover Effects for Social Icons */
+.footer .fa {
+  transition: transform 0.3s ease;
+}
+
+.footer .fa:hover {
+  transform: scale(1.1);
+  color: #f0f0f0;
+}
+
+.footer .social-links a {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: #007bff; /* Add color change on hover */
+}
+
+/* Mobile Responsive Footer */
+@media (max-width: 768px) {
+  .footer .list-inline-item {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .footer .text-md-left {
+    text-align: center;
+  }
+
+  .footer .text-md-right {
+    text-align: center;
+  }
+}
+
+/* custom footer code  end*/
+
 
 @media (min-width: 1270px) {
   .owl-theme .owl-dots {
